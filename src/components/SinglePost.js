@@ -31,7 +31,6 @@ function SinglePost() {
         }`
       )
       .then((data) => {
-        console.log("data", data);
         setSinglePost(data[0]);
       })
       .catch(console.error);
