@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
-import bluePlant from "../bluePlant.jpeg";
+import lilyflower from "../lilyflower.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 const builder = imageUrlBuilder(sanityClient);
@@ -28,12 +28,17 @@ function About() {
 
   return (
     <main className='relative'>
-      <img src={bluePlant} alt='blue Plant' className='absolute w-full' />
-      <div className='p-10 lg:pt-48 container mx-auto relative'>
-        <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20'>
+      <img
+        src={lilyflower}
+        alt='lily flower'
+        className='absolute object-cover w-full h-screen'
+        id='aboutimg'
+      />
+      <div className='p-8 lg:pt-44 container mx-auto relative'>
+        <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20 '>
           <img
             src={urlFor(author.authorImage).url()}
-            className='rounded  h-32 lg:w-64 mr-8'
+            className='rounded  w-32 h-32 lg:w-64 lg:h-64 mr-8'
             alt={author.name}
           />
           <div className='text-lg flex flex-col justify-center'>

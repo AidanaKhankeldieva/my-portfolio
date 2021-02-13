@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
+
 function Post() {
   const [postData, setPostData] = useState(null);
 
@@ -24,12 +25,12 @@ function Post() {
   }, []);
 
   return (
-    <main className='bg-green-100 min-h-screen p-12'>
+    <main className='bg-green-800 sm:h-screen p-12'>
       <section className='container mx-auto'>
-        <h1 className='text-5xl flex justify-center cursive'>
+        <h1 className='text-5xl flex justify-center cursive text-gray-100 mb-4'>
           Blog Posts Page
         </h1>
-        <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
+        <h2 className='text-lg text-green-300 flex justify-center mb-12'>
           Welcome to my page of blog posts
         </h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
