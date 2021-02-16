@@ -7,12 +7,9 @@ export default {
       name: "title",
       type: "string",
     },
+
     {
-      name: "date",
-      type: "datetime",
-    },
-    {
-      name: "place",
+      name: "technology",
       type: "string",
     },
     {

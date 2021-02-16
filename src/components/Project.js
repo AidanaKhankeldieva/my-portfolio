@@ -22,7 +22,7 @@ function Project() {
   }, []);
 
   return (
-    <main className='bg-green-800 min-h-screen p-12 ' id='projectmain'>
+    <main className='bg-green-800 min-h-screen p-12 '>
       <section className='container mx-auto'>
         <h1 className='text-5xl flex justify-center cursive mb-4 text-gray-100'>
           My Projects
@@ -49,12 +49,8 @@ function Project() {
                 </h3>
                 <div className='text-gray-500 text-xs space-x-4'>
                   <span>
-                    <strong className='font-bold'>Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span>
-                    <strong className='font-bold'>Location</strong>:{" "}
-                    {project.place}
+                    <strong className='font-bold'>Tools:</strong>:{" "}
+                    {project.technology}
                   </span>
                   <span>
                     <strong className='font-bold'>Type</strong>:{" "}
