@@ -35,7 +35,7 @@ function Project() {
             projectData.map((project, idx) => (
               <article
                 key={idx}
-                className='relative rounded-lg shadow-xl bg-white p-4 md:p-16 '
+                className='relative rounded-lg shadow-xl bg-white p-2 lg:p-16'
               >
                 <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                   <a
