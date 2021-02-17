@@ -31,7 +31,7 @@ function About() {
       <img
         src={lilyflower}
         alt='lily flower'
-        className='absolute object-cover w-full h-screen'
+        className='absolute object-cover w-screen h-screen'
         // id='aboutimg'
       />
       <div className='p-8 lg:pt-44 container mx-auto relative'>
