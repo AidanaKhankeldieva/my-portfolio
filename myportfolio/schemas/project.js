@@ -7,11 +7,6 @@ export default {
       name: "title",
       type: "string",
     },
-
-    {
-      name: "technology",
-      type: "string",
-    },
     {
       name: "description",
       type: "text",

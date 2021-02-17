@@ -49,16 +49,18 @@ function Project() {
                 </h3>
                 <div className='text-gray-500 text-xs space-x-4'>
                   <span>
-                    <strong className='font-bold'>Tools:</strong>:{" "}
-                    {project.technology}
-                  </span>
-                  <span>
                     <strong className='font-bold'>Type</strong>:{" "}
                     {project.projectType}
                   </span>
+                  <strong> Technology:</strong>
+                  {project.tags.map((item) => {
+                    console.log("item", item);
+                    return <p style={{ display: "inline" }}>#{item};</p>;
+                  })}
                   <p className='my-6 text-lg text-gray-700 leading-relaxed'>
                     {project.description}
                   </p>
+
                   <a
                     href={project.link}
                     rel='noopener noreferrer'

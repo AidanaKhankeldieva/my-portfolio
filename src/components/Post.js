@@ -25,7 +25,7 @@ function Post() {
   }, []);
 
   return (
-    <main className='bg-green-800 sm:h-screen p-12'>
+    <main className='bg-green-800 sm:h-full p-12'>
       <section className='container mx-auto'>
         <h1 className='text-5xl flex justify-center cursive text-gray-100 mb-4'>
           Blog Posts Page

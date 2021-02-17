@@ -32,7 +32,7 @@ function About() {
         src={lilyflower}
         alt='lily flower'
         className='absolute object-cover w-full h-screen'
-        id='aboutimg'
+        // id='aboutimg'
       />
       <div className='p-8 lg:pt-44 container mx-auto relative'>
         <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20 '>
